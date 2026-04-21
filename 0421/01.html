@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display속성</title>
+    <style>
+        #box{
+            display: inline-block; /*inline일 때와 비교: margin은 좌우, 너비와 높이 적용 안됨 / inline-block:margin, 너비와 높이 모두 적용됨*/
+            width: 100px;
+            height: 50px;
+            background-color: skyblue;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <p>display 속성의 값 중에서 inline과 inline-block의 차이점 비교</p>
+    <span>inline 요소</span>
+    <div id="box">차이점 비교 대상</div>
+    <span>inline 요소</span>
+    <p>display 속성의 값 중에서 inline과 inline-block의 차이점 비교</p>
+</body>
+</html>
