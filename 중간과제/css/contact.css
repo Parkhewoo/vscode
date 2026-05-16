@@ -1,0 +1,19 @@
+/* contact.css */
+
+.contact-container{
+    text-align: center;
+}
+
+.contact-container p{
+    margin-bottom: 15px;
+
+    font-size: 18px;
+}
+
+footer{
+    text-align: center;
+
+    padding: 30px;
+
+    background-color: #111827;
+}

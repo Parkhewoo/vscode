@@ -1,0 +1,64 @@
+/* home.css */
+
+#home{
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.home-content{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 60px;
+}
+
+.home-text h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.home-text h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+
+    color: #38bdf8;
+}
+
+.home-text p{
+    line-height: 1.8;
+    margin-bottom: 30px;
+
+    color: #d1d5db;
+}
+
+.main-btn{
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background-color: #38bdf8;
+
+    color: white;
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.main-btn:hover{
+    transform: translateY(-5px);
+}
+
+.home-image img{
+    width: 350px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
