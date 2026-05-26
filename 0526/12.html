@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다크모드 만들기</title>
+    <script>
+        window.onload = function(){
+           let firstH1 = document.getElementById("first_h1");
+           firstH1.style.color = "black";
+           firstH1.style.backgroundColor = "red";
+           firstH1.innerHTML = "첫 번째 h1 요소입니다.";
+        }
+        function toggleDarkMode(){
+            firstH1 = document.getElementById("first_h1");
+            if(firstH1.style.backgroundColor === "red"){
+                firstH1.style.color = "white";
+                firstH1.style.backgroundColor = "green";
+                document.body.style.backgroundColor = "black";
+            } else {
+                firstH1.style.color = "black";
+                firstH1.style.backgroundColor = "red";
+                document.body.style.backgroundColor = "white";
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+    <h1 id="first_h1">DOM(Document Object Model)</h1>
+    <button onclick="toggleDarkMode()">다크모드</button>
+</body>
+</html>
