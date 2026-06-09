@@ -1,21 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>인라인 이벤트 모델 1</title>
     <script>
-        function greet(){
+        window.onload = function(){
+             showImageSlide();
+        }
+        function greet() {
             alert('안녕하세요~ 인라인 이벤트 모델 2');
         }
-        function addStar(btn){
+        function addStar(btn) {
             btn.textContent += '★';
         }
+        function overChange(btn) {
+            btn.style.backgroundColor = 'magenta';
+            btn.style.color = 'white';
+        }
+        function outChange(btn) {
+            btn.style.backgroundColor = 'lightgray';
+            btn.style.color = 'black';
+        }
+        let count = 1;
+
+        function imageChange(img) {
+            count++;
+            if (count == 6) 
+                count = 1;   
+            img.src ='imgs/idol0' + count + '.jpg';
+        }
+       function showImageSlide(){
+            let img = document.getElementById('img2');
+            setInterval(function(){
+                count++;
+                if (count == 6) 
+                    count = 1;   
+                img.src ='imgs/idol0' + count + '.jpg';
+            }, 2000);
+       }
+
     </script>
 </head>
+
 <body>
     <button onclick="alert('인라인 이벤트 모델 1')">인라인 이벤트 모델 1</button><br><br>
     <button onclick="greet()">인라인 이벤트 모델 2</button><br><br>
-    <button onclick="addStar(this)">별 추가</button>
+    <button onclick="addStar(this)">별 추가</button><br><br>
+    <button onmouseover="overChange(this)" onmouseout="outChange(this)">배경 및 글자색 변경</button><br><br>
+
+    <img src="imgs/idol01.jpg" width="400" height="300" onclick="imageChange(this)" style="cursor: pointer;"><br><br>
+    <img src="imgs/idol01.jpg" width="400" height="300" id="img2">
+    
 </body>
+
 </html>
