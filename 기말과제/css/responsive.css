@@ -1,0 +1,22 @@
+@media screen and (max-width: 900px) {
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .home-text h1 {
+        font-size: 45px;
+    }
+
+    .home-text h2 {
+        font-size: 28px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+}

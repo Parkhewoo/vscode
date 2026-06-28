@@ -1,0 +1,35 @@
+header {
+    width: 100%;
+    padding: 20px 10%;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}

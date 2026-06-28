@@ -1,0 +1,44 @@
+.contact-container {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-container p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.contact-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+#sendBtn {
+    width: 100%;
+    padding: 12px;
+    background-color: #38bdf8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#sendBtn:hover {
+    background-color: #0284c7;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: var(--header-bg);
+    color: var(--text-muted);
+    margin-top: 50px;
+}

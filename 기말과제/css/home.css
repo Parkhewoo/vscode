@@ -1,0 +1,51 @@
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text {
+    text-align: center; /* 이미지 공간이 없으므로 중앙 정렬 처리 */
+    max-width: 800px;
+}
+
+.home-text h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.home-text h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #38bdf8;
+    min-height: 46px; /* 타이핑 작동 시 레이아웃 들썩임 방지 */
+}
+
+.home-text p {
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: var(--text-muted);
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #38bdf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-5px);
+    background-color: #0284c7;
+}
